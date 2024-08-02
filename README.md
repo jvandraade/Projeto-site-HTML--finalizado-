@@ -13,9 +13,9 @@ Este site foi usado para aprender a linguagem de forma geral e assim entender so
 Todos os conteúdos utilizados (Imagens, vídeos) foram autorizado pelo próprio professor do curso para uso didático.
 
 
-Autores: João Vitor Andrade Santos
+## Autores: João Vitor Andrade Santos
 
-Agradecimentos: 
+## Agradecimentos: 
 Quero agradecer ao professor Gustavo Guanabara, primeiramente por ter um canal fantástico de ensinamentos, e segundo por proporcionar um ambiente fantástico de aprendizagem a novos alunos desde sempre,
 que com isso vamos chegar muito longe por causa do mesmo.
 
