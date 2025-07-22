@@ -1,49 +1,80 @@
-@charset "utf8mb4";
+@charset "utf-8";
 
+/* Ajuste responsivo do formulário */
 form {
-    width: 500px;
-    margin: auto;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 13pt;
-    background-color: rgba(255, 255, 255,0.8);
+/* Inputs e textareas mais modernos */
+input,
+textarea {
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 14pt;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-input:hover, textarea:hover {
-    background-color: #dddddd;
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  background-color: #f0f0f0;
+  border-color: #888;
+  outline: none;
 }
 
+/* Título de cada grupo do formulário */
 legend {
-    color: #888888;
-    font-weight: bold;
-    font-size: 13pt;
-    font-family: sans-serif;
+  color: #555;
+  font-weight: bold;
+  font-size: 14pt;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 5px;
 }
 
+/* Blocos de campos */
 fieldset {
-    border-color: #cecece;
-    margin: 20px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  box-sizing: border-box;
 }
 
+/* Fieldset específico pequeno */
 fieldset#sexo {
-    width: 100px;
+  max-width: 200px;
+  background: none;
 }
 
+/* Ícones mantidos */
 fieldset#usuario {
-    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+  background-image: url('../_imagens/icone-contato.png');
 }
 
 fieldset#endereco {
-    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+  background-image: url('../_imagens/icone-endereco.png');
 }
 
 fieldset#mensagem {
-    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+  background-image: url('../_imagens/icone-mensagem.png');
 }
 
 fieldset#pedido {
-    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+  background-image: url('../_imagens/icone-pagamento.png');
 }

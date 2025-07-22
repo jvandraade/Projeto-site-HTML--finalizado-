@@ -1,17 +1,29 @@
-@charset "utf8mb4";
+@charset "utf-8";
 
 section#conteudo {
-    width: 1000px;
-    margin: auto;
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
+/* iframe responsivo mantendo proporção 16:9 */
 iframe#frame-spec {
-    width: 400px;
-    height: 280px;
-    border: none;
-    overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Esconder scrollbar em todos os navegadores */
+iframe#frame-spec {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 iframe#frame-spec::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
